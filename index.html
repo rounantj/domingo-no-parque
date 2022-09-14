@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<link rel="shortcut icon"
+    href="https://www.weg.net/institutional/_ui/desktop/theme-institutional/img/brand-white.svg" />
+
+<script src="aframe.js"></script>
+<!-- we import arjs version without NFT but with marker + location based support -->
+<script src="aframe-ar.js"></script>
+
+<body style="margin : 0px; overflow: hidden;">
+
+
+    <a-scene embedded arjs="detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+
+
+        <a-marker type="barcode" value="4">
+            <a-entity position="0 0 0.5" scale="20 20 20" gltf-model="MODELO1_AC33_MANAUS.gltf"></a-entity>
+        </a-marker>
+
+        <a-marker type="barcode" value="2">
+
+            <a-entity position="0 0 0" scale="15 15 15" gltf-model="MODELO1_W01_AS.gltf"></a-entity>
+        </a-marker> -->
+
+        <a-marker type="barcode" value="3">
+            <a-entity position="0 0 0" scale="15 15 15" gltf-model="MODELO1_WFL.gltf"></a-entity>
+        </a-marker>
+
+            <a-marker type="barcode" value="1">
+                <a-entity position="0 0 0" scale="15 15 15" gltf-model="MODELO3.gltf"></a-entity>
+            </a-marker>
+
+
+
+        <a-marker type="barcode" value="0">
+         
+            <a-entity position="0 0 0" scale="15 15 15" gltf-model="MODELO1_WMP.gltf"></a-entity> -->
+        </a-marker> 
+
+
+
+
+
+
+
+
+        <a-entity camera></a-entity>
+    </a-scene>
+
+</body>
+
+
+</html>
